@@ -1,0 +1,34 @@
+.heading-primary {
+    font-size: 8rem;
+    color: $color-white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2.5rem;
+    animation: moveInTop 2s;
+}
+
+.heading-secondary {
+    font-size: 6rem;
+    color: $color-primary-purple;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -10%);
+
+}
+
+.heading-tertiary {
+    margin-left: 2rem;
+    color: $color-white;
+    font-size: 3rem;
+
+    &__aboutpar {
+        font-size: 1.8rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        color: $color-grey-dark-3;
+        text-align: justify;
+        hyphens: initial;
+    }
+}
+
