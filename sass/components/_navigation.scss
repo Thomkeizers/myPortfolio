@@ -1,0 +1,11 @@
+.nav {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: $color-white;
+    text-align: center;
+    z-index: 2000;
+}

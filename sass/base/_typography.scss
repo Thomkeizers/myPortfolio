@@ -8,27 +8,18 @@
 }
 
 .heading-secondary {
-    font-size: 6rem;
-    color: $color-primary-purple;
-    position: absolute;
-    left: 50%;
-    top: 10%;
-    transform: translate(-50%, -10%);
-
+    font-size: 5rem;
+    color: $color-white;
+    margin: 0;
+    text-transform: uppercase;
 }
 
 .heading-tertiary {
-    margin-left: 2rem;
-    color: $color-white;
-    font-size: 3rem;
-
-    &__aboutpar {
-        font-size: 1.8rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        color: $color-grey-dark-3;
-        text-align: justify;
-        hyphens: initial;
-    }
+    font-size: 1.5rem;
+    color: $color-primary-purple;
+    
 }
+
+
+
 
