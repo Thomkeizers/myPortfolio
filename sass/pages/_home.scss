@@ -53,29 +53,46 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 .project {
-    background-image: url(../img/calc_overview.jpg);
+    background-color: black;
     width: 40%;
     height: 40%;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -70%);
     background-size: cover;
     background-repeat: no-repeat;
 
-    &:hover {
-      transform: scale(-1rem);
+    &__img {
+        width: 100%;
+        height: 100%;
     }
-    
 
     &__heading {
         text-align: center;
         font-size: 5rem;
-        color: $color-primary-reddish;
+        font-weight: bolder;
+        color: $color-white;
+    }
+
+    &__more {
+        position: absolute;
+        bottom: -100px;
+        right: 10px;
+        background-color: $color-primary-reddish;
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 2rem;
+        color: white;
+
+        &:hover {
+            background-color: black;
+            border-radius: 5%;
+        }
+        
     }
 
 }
@@ -90,17 +107,153 @@
                 rgba($color-white, .9)  0%, 
                 rgba($color-white, .9) 50%,
         transparent 50%) ,
-        url(../img/nat-10.jpg);
-    background-size: 100%;
+        url(../img/scotland.jpg);
+    background-size: cover;
+   
     border-radius: .3rem;
     box-shadow: 0 1.5 4rem rgba($color-black, .2);
+    height: 40rem;
     
 
 
 
     &__form {
         width: 50%;
-        padding: 6rem;
+        padding: 1rem;
     }
 }
+
+.description {
+    color: white;
+    font-size: 2rem;
+    margin-top: 30%;
+    position: fixed;
+}
+
+.detail-body {
+    background-image: linear-gradient(to right bottom, $color-primary-reddish, #FF2511);
+    height: 85vh;
+    position: relative;
+}
+
+.return {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2rem;
+    background-color: $color-black;
+    
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.about-body {
+    background-image: linear-gradient(to right bottom, $color-primary-reddish, #FF2511);
+    height: 100vh;    
+}
+
+.aboutpage {
+    background-color: $color-white;
+    border-radius: 1%;
+    box-shadow: 0 1.5 4rem rgba($color-black, .2);
+    height: 30rem;
+    text-align: center;
+    font-size: 1.5rem;
+
+    &__skilllist {
+        list-style: none;
+        text-align: center;
+    }
+
+    &__skillitem {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: -3rem;
+        margin-bottom: 1rem;
+        
+    }
+}
+
+.contact-body {
+    background-image: linear-gradient($color-primary-reddish, $color-primary-purple);
+    height: 100vh;
+}
+
+.contacts {
+    background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-light-1);
+    height: 27.2rem;
+    padding: 1rem;
+   
+
+    &__phone {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+}
+
+.iconfb {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10%;
+    margin-right: 3rem;
+    
+
+    &__logo-facebook {
+        font-size: 10rem;
+        color: rgb(42, 42, 99);
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.iconig {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10%;
+    margin-right: 3rem;
+
+    &__logo-instagram {
+        font-size: 10rem;
+        color: #e1306c;
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.icontw {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10%;
+
+    &__logo-twitter {
+        font-size: 10rem;
+        color: #38A1F3;
+        transition: .2s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.iconalign {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.error {
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 6rem;
+}
+
 

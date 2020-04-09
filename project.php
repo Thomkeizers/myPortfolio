@@ -1,4 +1,8 @@
 <?php
+include "dbcon.php";
+
+$projectSql = "SELECT * FROM projects";
+$projectSqlResult = mysqli_query($conn, $projectSql);
 
 
 ?>
@@ -16,11 +20,30 @@
         <h2 class="heading-secondary center-horizontal margin-top-big">My Projects</h2>
     </div>
 
-    <div class="project">
-        <h3 class="project__heading heading-tertiary">Calculator</h3>
+    <?php
+
+    $projectArray = [];
+
+    while($project = mysqli_fetch_assoc($projectSqlResult))
+    {
+        $projectArray[] = $project;
+    }
+
+    foreach($projectArray as $singleProject)
+    { ?>
+        <div class="project margin-bottom-big">
+        <h3 class="project__heading heading-tertiary"><?php echo $singleProject['project_name']; ?></h3>
+        <img class="project__img" src="<?php echo $singleProject['project_overview_img'] ?>" alt="">
+        
         <form class="project__form" method="post">
-            <a class="project__more" href="projectdetails">More details</a>
+            <a class="project__more" href="projectdetail.php?project=<?php echo $singleProject['project_id'] ?>">More details</a>
         </form>
     </div>
+    <?php
+    }
+
+    ?>
+
+    
 </body>
 </html>
