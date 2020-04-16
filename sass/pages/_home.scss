@@ -256,4 +256,39 @@
     margin-bottom: 6rem;
 }
 
+.cms {
+    background-image: linear-gradient($color-secondary-light, $color-secondary-light-1);
+    height: 50rem;
+    transition: all .2s;
+    box-shadow: 2rem 1.5rem 4rem rgba($color-white, .2);
+
+    &:hover {
+        transform:  translateY(.5rem);
+    }
+
+    &__heading {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    &__paragraph {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    &__button {
+        margin-top: 20rem;
+        margin-left: 7rem;
+
+        &:active {
+            visibility: hidden;
+        }
+    }
+}
+
+.admin-body {
+    background-color: black;
+}
+
 
